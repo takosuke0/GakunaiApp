@@ -1,0 +1,335 @@
+@charset "UTF-8";
+
+
+/*余白の初期化とフォントサイズの変更*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body p{
+    font-size: 130%;
+}
+body{
+    border-left:solid gainsboro 0.1em;
+    border-right:solid gainsboro 0.1em;
+}
+
+
+
+.container p{
+    padding-left: 1em;
+}
+
+
+.title_pos{
+    padding-left: 4%;
+
+}
+.title_pos a{
+    color: white;
+}
+.title_font_size{
+    font-size: 30;
+}
+
+/*ヘッダーの設定*/
+.itembar{/*周り10pxの間隔を開ける  字は白*/
+    color:white;
+    padding-top: 15px;
+
+    background:skyblue;
+	padding-left:5%;
+    padding-bottom: 15px;
+    padding-right:5%;
+    text-decoration: none;
+}
+
+.defBarColor{
+	background:skyblue;
+}
+
+.nav_white{
+    color: white;
+    font-size: 800;
+}
+
+.contents p{
+    padding-left:4em;
+}
+.border_radius{
+    border-radius: 1%;
+}
+/*パディング マージンの設定*/
+.pad_b1{
+    padding-bottom: 1em;
+}
+.pad_tb2{
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+.mar_b3{/*未解決*/
+    margin-bottom: 3em;
+}
+.mar_t2{
+    margin-top: 2em;
+}
+
+#mar_t10{
+    margin-top: 10em;
+}
+.mar-lef4e{
+    margin-left: 4.3em;
+}
+.select-time-ml4{
+    margin-left: 4em;
+}
+.mar-lef5e{
+    margin-left: 5em;
+}
+.mar_lef10{
+    position: relative;
+    left: 9%;
+}
+.mar-lef20{
+    margin-left: 20%;
+}
+.mar-top4e{
+    margin-top: 4em;
+}
+
+.marl-5p{
+    margin-left: 5%;
+
+}
+.marl-10p{
+    margin-left: 10%;
+}
+.mar_r4{
+    margin-right: 4em;
+}
+
+.pos_R{
+    position: absolute;
+    right: 0;
+}
+.pos_center{
+    position:absolute;
+    inset:0;
+    margin: auto;
+}
+/*色*/
+.col-white{
+    color: white;
+}
+/*説明文用*/
+#explanation_text{
+    padding-top: 3em;
+
+}
+#explanation_text p{
+    font-size: medium;
+    margin-left: 1em;
+}
+.text{
+    font-size: medium;
+    margin-left: 1em;
+}
+#explanation_title{
+    margin-bottom: 3em;
+    font-size: larger;
+    font-weight: 600;
+    color: rgb(20, 241, 241);
+}
+
+
+/*掲示板用*/
+.bg_gray{
+    background-color:blue;
+    padding: 10px;
+}
+.board_title{
+
+    font-size: larger;
+    font-weight: 700;
+}
+.board_text{
+    font-size: medium;
+}
+.board_date{
+    font-size: small;
+
+    bottom: 0;
+}
+.board_color{
+    background-color: rgba(80, 221, 221, 0.342);
+}
+.border{
+    border-bottom: 1em solid black;
+    border-radius: 2%;
+}
+#new_posts{
+   animation: new_posts 3s linear;
+   animation-iteration-count:infinite;
+}
+/*.name_pos{
+    /*position: relative;
+    right: 0;
+    bottom:0;
+}*/
+@keyframes new_posts{
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+}
+
+/*文字列上側の間隔*/
+.inputBox p{
+    padding-top: 5%;
+}
+.expression{
+    padding-top: 5%;
+}
+
+
+#Attendance_rate,#Timeable,#Bulletin_board,#Resevation{
+    margin-top: 4%;
+    padding-top: 0.1em;
+    padding-bottom:0.1em ;
+    padding-left: 1em;
+    border-bottom: .21em rgb(174, 232, 253) solid;
+    background-color: skyblue;
+}
+
+/*ボタンの設定*/
+.Attendance_rate_button, .Timetable_button,.Bulletin_board_button,.Reservation_button{/*左から　出席率 時間割 掲示板 予約*/
+    position:relative;
+    margin-top: 10%;
+    left:77%;
+    margin-bottom: 0.5em;
+
+
+}
+
+.bg-lsBlue{
+    background-color: rgb(244, 251, 255);
+}
+
+/*アニメーションの追加*/
+/*
+.subTitle_fadein{
+    font-size: 40;
+    opacity: 0;
+    animation-name: subtitle01;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+
+}
+@keyframes subtitle01 {
+    0%{
+        opacity: 0;
+        transform: translateX(-10%);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.subTitle_fadein2{
+    font-size: 40;
+    opacity: 0;
+    animation-name: subtitle02;
+    animation-duration: 1.4s;
+    animation-fill-mode: forwards;
+
+}
+@keyframes subtitle02 {
+    0%{
+        opacity: 0;
+        transform: translateX(-10%);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.subTitle_fadein3{
+    font-size: 40;
+    opacity: 0;
+    animation-name: subtitle03;
+    animation-duration: 1.8s;
+    animation-fill-mode: forwards;
+
+}
+@keyframes subtitle03 {
+    0%{
+        opacity: 0;
+        transform: translateX(-10%);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.subTitle_fadein4{
+    font-size: 40;
+    opacity: 0;
+    animation-name: subtitle04;
+    animation-duration: 2.2s;
+    animation-fill-mode: forwards;
+
+}
+@keyframes subtitle04{
+    0%{
+        opacity: 0;
+        transform: translateX(-10%);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}*/
+
+/*セレクトボックスの設定*/
+#ClassName{
+    margin-left: 1.3em;
+    margin-top: 5%;
+    width:100px;
+}
+
+#ClassName option{
+    font-size: 130%;
+}
+/*掲示板の設定*/
+.inputarea{
+    background:rgb(196, 196, 245);
+
+}
+
+
+.inputConfig{
+    height: 4em;
+}
+@media screen and (min-width:992px){
+    .ref_992{
+        margin-left: 8em!important;
+    }
+}
+@media screen and (max-width:992px) {
+    .ref_992{
+        margin-left: 0!important;
+    }
+}
+
+/*hoverの設定*/
+
+.hover-content-mypage:hover{
+    display: block;/*画面に表示(元の文章は隠しておく必要がある)*/
+}
