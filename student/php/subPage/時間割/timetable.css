@@ -1,0 +1,27 @@
+.ClassName
+{   
+    text-align: center;
+    color: skyblue;
+}
+
+table 
+{
+    border-collapse: collapse;
+    width: 70%;
+    height: 70%;
+    top: 0; bottom: 0; left: 0; right: 0;
+    position: absolute;
+    margin: auto;
+}
+
+table th, table td
+{
+    text-align:center;
+    border: solid 1px black;
+}
+
+th 
+{
+    color: white;
+    background: skyblue;
+}
